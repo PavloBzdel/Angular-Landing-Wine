@@ -1,9 +1,7 @@
 @import "/src/scss/variable";
 
 .section-home{
-  background-image: url(/../assets/images/bgc-home.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+background-color: $background-black-color;
   .navigation{
     padding-top: 20px;
     margin-bottom: 580px;
