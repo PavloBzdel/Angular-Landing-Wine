@@ -1,0 +1,349 @@
+@import "/src/scss/variable";
+
+.section-home{
+  background-image: url(/../assets/images/bgc-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .navigation{
+    padding-top: 20px;
+    margin-bottom: 580px;
+    .navigation-info{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .nav{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+    border:  solid 1px $white-color;
+    a{
+      padding: 13px 117px;
+      color: $white-color;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+  .home-button-container{
+    padding-bottom: 150px;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    button{
+      margin-right: 30px;
+    }
+  }
+}
+
+.section-content{
+  background-color: $background-black-color;
+  padding: 100px 0;
+  .container-content{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid 3px $border-color;
+  }
+  .content-title{
+    margin-bottom: 40px;
+  }
+  .content-text{
+    padding: 40px 190px;
+  }
+}
+
+.section-info{
+  padding: 80px 0;
+  background-color: $background-nude-color;
+  color: $background-black-color;
+  .container-info{
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px $background-footer-color;
+    border-bottom: solid 1px $background-footer-color;
+  }
+  .info-title, .info-text{
+    margin: 30px 0;
+  }
+  .info-border{
+    border-top: solid 1px $background-black-color;
+    max-width: 160px;
+  }
+  .info-text{
+    max-width: 445px;
+  }
+  .wine-info{
+    display: flex;
+    border-bottom: solid 1px $background-black-color;
+    &:nth-child(3){
+      border-bottom: none;
+    }
+    .info-year{
+      padding: 25px;
+      border-right: solid 1px $background-black-color;
+    }
+    .info-name{
+      padding: 9px 30px;
+      .name{
+        margin-bottom: 2px;
+      }
+    }
+  }
+  .info-img-big{
+    margin-bottom: 30px;
+  }
+  .info-img-small{
+    display: flex;
+    gap: 30px;
+  }
+}
+.section-form{
+  background-color: $background-black-color;
+  .container-form{
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px $border-color;
+    padding: 20px 285px 65px;
+  }
+  .react-form-title{
+    padding: 10px 50px;
+    position: relative;
+    transform: translateY(-65px);
+    background-color: $background-black-color;
+  }
+  .react-form-text{
+    max-width: 539px;
+    text-align: center;
+    margin: 40px 0 80px;
+  }
+  .form-svg{
+    img{
+      position: absolute;
+      &:nth-child(1){
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      &:nth-child(2){
+        top: 20px;
+        right: 0;
+        z-index: 1;
+      }
+    }
+  }
+  .container-number-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .react-form-button{
+    button{
+      &:disabled{
+        cursor: no-drop;
+      }
+      padding: 5px 25px;
+      background-color: $background-black-color;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+footer{
+  background-color: $background-footer-color;
+  .footer-nav{
+    padding: 50px 0;
+  }
+  .footer-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+  }
+  .footer-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px $border-color;
+    border-bottom: solid 1px $border-color;
+    padding: 20px 0;
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white-color;
+      text-transform: uppercase;
+      margin-right: 20px;
+      &:nth-child(7){
+        margin-right: 0;
+      }
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+  .footer-info{
+    border-top: none;
+  }
+  .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      cursor: pointer;
+      &:hover{
+        opacity: 0.7;
+      }
+      &:nth-child(1){
+        margin-right: 20px;
+      }
+    }
+  }
+}
+@media (max-width: $desktop-small){
+  .container{
+    margin: auto 40px;
+  }
+}
+
+@media (max-width: $tablet){
+  .container{
+    margin: auto 40px;
+  }
+  .section-home{
+    .link{
+      padding: 13px 50px !important;
+    }
+  }
+  .section-info{
+   .wrapper-right{
+    margin-left: 25px;
+    img{
+      width: 100%;
+    }
+   }
+  }
+  .section-form{
+    .form-svg{
+      img{
+        width: 22%;
+      }
+    }
+    .form{
+      padding: 20px 200px 65px;
+      .react-form-title{
+        font-size: 25px;
+      }
+    }
+  }
+  footer{
+    .footer-navigation{
+      a{
+        margin-right: 15px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile){
+  .container{
+    margin: auto 40px;
+  }
+  .section-home{
+    .link{
+      padding: 13px 20px !important;
+    }
+  }
+  .section-content{
+    .content-text{
+      padding: 40px 50px;
+    }
+  }
+  .section-info{
+    .container-info{
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  .section-form{
+    .form{
+      padding: 20px 80px 65px ;
+    }
+    .form-svg{
+      img{
+        &:nth-child(1){
+          top: 40px;
+          left: -15px;
+        }
+        &:nth-child(2){
+          top: 40px;
+          right: -15px;
+        }
+      }
+    }
+  }
+  footer{
+    .footer-navigation{
+      a{
+        font-size: 10px;
+        margin-right: 15px;
+      }
+    }
+    .item{
+      margin-right: 18px;
+    }
+  }
+}
+@media (max-width: $mobile-small){
+  .container{
+    margin: auto 40px;
+  }
+  .section-home{
+    .link{
+      font-size: 10px;
+      padding: 13px 10px !important;
+    }
+    .home-button-container{
+      margin: 150px 150px 0 ;
+    }
+  }
+  .section-form{
+    .form-svg{
+      display: none;
+    }
+    .react-form-title{
+      text-align: center;
+      padding: 0;
+    }
+    .react-form-text{
+      margin: 40px 0 80px;
+    }
+    .container-number-name{
+      flex-direction: column;
+    }
+    .address{
+      margin-top: 17.5px;
+    }
+  }
+  .footer-navigation, .footer-info{
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px;
+    text-align: center;
+  }
+}

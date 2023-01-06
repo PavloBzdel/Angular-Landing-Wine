@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import "/src/scss/variable";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap');
+
+
+// font-family: 'Montserrat', sans-serif;
+
+// font-family: 'Playfair Display', serif;
+
+  .container{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1140px;
+    margin: auto;
+  }
+  body{
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    color: $white-color;
+  }
+  a{
+    text-decoration: none;
+  }
+  *,
+  *::after,
+  *::before{
+    box-sizing: border-box;
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,66 @@
+$desktop-medium: 1440px;
+$desktop-small: 1140px;
+$tablet: 900px;
+$mobile: 600px;
+$mobile-small: 340px;
+
+$white-color: #FFFFFF;
+$background-black-color: #282828;
+$background-nude-color: #E6E3C4;
+$background-footer-color: #998431;
+$button-color: #99862A;
+$border-color: #C4C4C4;
+$black-color: #000000;
+
+
+// Button
+
+.btn{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  padding: 15px 30px;
+  border: none;
+  background-color: $button-color;
+  color: $white-color;
+  cursor: pointer;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+// Fonts
+
+.title{
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  line-height: 150%;
+}
+.info-subtitle{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $black-color;
+}
+.info-title{
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  line-height: 150%;
+}
+.info-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+.name{
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  line-height: 150%;
+}
+.info{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
