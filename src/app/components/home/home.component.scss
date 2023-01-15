@@ -307,11 +307,27 @@ footer{
       margin-right: 18px;
     }
   }
+  .section-info{
+    .wrapper-right{
+     margin-left: 25px;
+     img{
+       width: 100%;
+     }
+    }
+   }
 }
 @media (max-width: $mobile-small){
   .container{
     margin: auto 40px;
   }
+  .section-info{
+    .wrapper-right{
+     margin-left: 25px;
+     img{
+       width: 100%;
+     }
+    }
+   }
   .section-home{
     .link{
       font-size: 10px;
